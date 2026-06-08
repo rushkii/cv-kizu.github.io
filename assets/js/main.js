@@ -42,16 +42,6 @@ const thumbnails = new Splide("#thumbnail-slider", {
   breakpoints: {
     640: {
       fixedWidth: 66,
-
-
-
-
-
-
-
-
-
-      
       fixedHeight: 38,
     },
   },
