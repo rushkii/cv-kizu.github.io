@@ -101,6 +101,19 @@ if (menuToggle) {
   });
 }
 
+// untuk handle navigation mobile
+document.addEventListener("click", (e) => {
+  if (
+    mobileMenu &&
+    !mobileMenu.classList.contains("hidden") &&
+    !mobileMenu.contains(e.target) &&
+    !menuToggle.contains(e.target)
+  ) {
+    mobileMenu.classList.add("hidden");
+    mobileMenu.classList.remove("flex");
+  }
+});
+
 // untuk remove spoiler mark
 if (spoiler) {
   spoiler.addEventListener("click", () => {

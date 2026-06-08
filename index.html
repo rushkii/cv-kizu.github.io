@@ -30,7 +30,7 @@
   >
     <!-- header navigation -->
     <nav
-      class="sticky top-2 z-50 border border-neutral-300/70 dark:border-neutral-700/40 flex items-center justify-between w-[calc(100%-1rem)] md:w-[calc(100%-2rem)] py-5 px-5 md:px-10 lg:px-20 mx-auto rounded-2xl bg-white/70 dark:bg-neutral-800/70 backdrop-blur drop-shadow-xl drop-shadow-neutral-400/20 dark:drop-shadow-neutral-800/20"
+      class="relative sticky top-2 z-50 border border-neutral-300/70 dark:border-neutral-700/40 flex items-center justify-between w-[calc(100%-1rem)] md:w-[calc(100%-2rem)] py-5 px-5 md:px-10 lg:px-20 mx-auto rounded-2xl bg-white/70 dark:bg-neutral-800/70 backdrop-blur drop-shadow-xl drop-shadow-neutral-400/20 dark:drop-shadow-neutral-800/20"
     >
       <a
         href="#"
@@ -41,12 +41,19 @@
         .dev
       </a>
 
+      <!-- untuk navigasi di desktop -->
       <div class="hidden md:flex items-center gap-8">
         <a
           href="#tentang"
           class="text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-blue-500 transition-colors duration-300"
         >
           Tentang
+        </a>
+        <a
+          href="#pengalaman"
+          class="text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-blue-500 transition-colors duration-300"
+        >
+          Pengalaman
         </a>
         <a
           href="#pendidikan"
@@ -181,27 +188,50 @@
           </svg>
         </button>
       </div>
-    </nav>
 
-    <div id="mobileMenu" class="hidden md:hidden flex-col gap-4 px-6 pb-6">
-      <a
-        href="#tentang"
-        class="text-sm font-medium text-neutral-600 dark:text-neutral-400"
-        >Tentang</a
+      <!-- untuk navigasi di mobile -->
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden absolute left-0 right-0 top-full mt-2 mx-2 flex-col gap-1 p-3 border border-neutral-200/70 dark:border-neutral-700/40 bg-white dark:bg-neutral-800 rounded-xl shadow-lg shadow-neutral-400/10 dark:shadow-neutral-900/30"
       >
-      <a
-        href="#pendidikan"
-        class="text-sm font-medium text-neutral-600 dark:text-neutral-400"
-      >
-        Pendidikan
-      </a>
-      <a
-        href="#portfolio"
-        class="text-sm font-medium text-neutral-600 dark:text-neutral-400"
-      >
-        Portfolio
-      </a>
-    </div>
+        <a
+          href="#tentang"
+          class="block text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-blue-500 hover:bg-neutral-100 dark:hover:bg-neutral-900 rounded-lg px-3 py-2 transition-colors duration-200"
+        >
+          Tentang
+        </a>
+        <a
+          href="#pengalaman"
+          class="block text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-blue-500 hover:bg-neutral-100 dark:hover:bg-neutral-900 rounded-lg px-3 py-2 transition-colors duration-200"
+        >
+          Pengalaman
+        </a>
+        <a
+          href="#pendidikan"
+          class="block text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-blue-500 hover:bg-neutral-100 dark:hover:bg-neutral-900 rounded-lg px-3 py-2 transition-colors duration-200"
+        >
+          Pendidikan
+        </a>
+        <a
+          href="#portfolio"
+          class="block text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-blue-500 hover:bg-neutral-100 dark:hover:bg-neutral-900 rounded-lg px-3 py-2 transition-colors duration-200"
+        >
+          Portfolio
+        </a>
+        <a
+          href="#skills"
+          class="block text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-blue-500 hover:bg-neutral-100 dark:hover:bg-neutral-900 rounded-lg px-3 py-2 transition-colors duration-200"
+        >
+          Skill
+        </a>
+        <a
+          href="#showcase"
+          class="block text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-blue-500 hover:bg-neutral-100 dark:hover:bg-neutral-900 rounded-lg px-3 py-2 transition-colors duration-200"
+        >
+          Showcase
+        </a>
+      </div>
+    </nav>
 
     <div class="flex flex-col gap-20 pt-8 pb-10 md:pb-15 md:pt-20">
       <section
@@ -313,12 +343,12 @@
             <p
               class="text-sm md:text-lg leading-relaxed text-neutral-600 dark:text-neutral-300"
             >
-              Memiliki rekam jejak dalam membangun dan mengirimkan proyek
-              end-to-end secara mandiri, termasuk
-              <b>Human Resource Information System</b> untuk
-              <b>Universitas Terbuka</b>, landing page komunitas dan manajemen
-              akun email komunitas GNU/Weeb, serta berbagai proyek personal
-              lainnya.
+              Saya sudah sering membangung website-website karena hobi maupun
+              pekerjaaan, banyak aplikasi web yang sudah saya kerjaan seperti
+              landing page untuk komunitas GNU/Weeb, project pribadi entah itu
+              personal web atau iseng-iseng, hingga membuat aplikasi
+              <b>Human Resource Information System (HRIS)</b> di
+              <i>Universitas Terbuka</i> untuk mengelola kepegawaian.
             </p>
           </div>
           <div
@@ -518,6 +548,7 @@
       </section>
 
       <section
+        id="pengalaman"
         class="flex flex-col w-full px-6 md:px-10 lg:px-20 gap-5 md:gap-8 transition-normal duration-300"
       >
         <div class="flex flex-col gap-1">
